@@ -1,3 +1,45 @@
 # GMsys
-#### Online Grievance Management System at Institute level
-It’s a four level escalation system. Student will register grievance using this system. Request will go to committee members of institute. If resolved (with in specified time) than it will be closed else will escalate to principal of the college. If not resolved (with in specified time) will escalate to ombudsman at University level. Final level of escalation to AICTE Grievance Portal.
+Online Grievance Management System at Institute level
+
+## Prerequisite
+
+<ul>  
+<li> Python 3.6 (or later)
+  
+  It can be installed from:
+  https://www.python.org/downloads/
+  
+<li> Django 2.0 (or later)
+  
+  It can be installed using:
+  
+  `pip install django`
+  
+  To check the django version, open cmd and type:
+  ```
+  py
+  import django
+  django.VERSION
+  ```
+  
+</ul>
+
+## Setting up the Project
+<ul>  
+<li> Forking the Repository
+<li> Cloning
+  
+  <p> You can the forked repo in your local system using following command : </p> 
+     
+     `git clone https://github.com/harry-hov/GMsys.git`
+     
+</ul>
+
+## Running project locally
+To run the project,
+1. Go to the project directory.
+2. Open Command Prompt.
+3. `cd GMsys`
+4. `py manage.py runserver`
+5. Open "http://localhost:8000/home" in any browser.
+  
