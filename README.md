@@ -29,7 +29,7 @@ Online Grievance Management System at Institute level
 <li> Forking the Repository
 <li> Cloning
   
-  <p> You can the forked repo in your local system using following command : </p> 
+  <p> You can clone the repo in your local system using following command : </p> 
      
      `git clone https://github.com/harry-hov/GMsys.git`
      
