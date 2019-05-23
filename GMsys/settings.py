@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
-import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -26,7 +25,7 @@ SECRET_KEY = 'bvcyb&b8svvlgr+xq#2&i07a7(2ykl_ojmz^d0t9s#w3m2(vca'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gm-sys.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -124,5 +123,3 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
