@@ -1,1 +1,1 @@
-web: gunicorn GMsys.wsgi --log-file -
+web: gunicorn GMsys.wsgi
