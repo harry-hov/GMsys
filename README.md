@@ -1,4 +1,6 @@
 # GMsys
+[![Build Status](https://travis-ci.com/harry-hov/GMsys.svg?branch=master)](https://travis-ci.com/harry-hov/GMsys)
+
 Online Grievance Management System at Institute level
 
 ## Prerequisite
