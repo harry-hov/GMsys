@@ -1,5 +1,6 @@
 # GMsys
 [![Build Status](https://travis-ci.com/harry-hov/GMsys.svg?branch=master)](https://travis-ci.com/harry-hov/GMsys)
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/harry-hov)
 
 Online Grievance Management System at Institute level
 
