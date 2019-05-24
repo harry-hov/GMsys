@@ -33,16 +33,28 @@ Online Grievance Management System at Institute level
 <li> Cloning
   
   <p> You can clone the repo in your local system using following command : </p> 
+  
+    `git clone https://github.com/user-name/GMsys.git`
      
-     `git clone https://github.com/harry-hov/GMsys.git`
+  Note: Replace "user-name" with your Github username.
      
+<li> Setting Upstream
+     
+    `git remote add upstream https://github.com/harry-hov/GMsys.git`
+    
 </ul>
 
 ## Running project locally
 To run the project,
 1. Go to the project directory.
 2. Open Command Prompt.
-3. `cd GMsys`
-4. `py manage.py runserver`
-5. Open "http://localhost:8000/home" in any browser.
-  
+3. `py manage.py runserver`
+4. Open "http://localhost:8000" in any browser.
+
+## Keeping the project updated
+```
+git fetch upstream
+git rebase upstream/master
+git push -f origin master
+```
+Note: make sure that "master" is your current branch
