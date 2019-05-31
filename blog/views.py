@@ -9,3 +9,9 @@ def about(request):
 
 def contributors(request):
 	return render(request,'contributors.html')
+
+def status(request):
+	return render(request,'status.html')
+
+def grievances(request):
+	return render(request,'grievances.html')
