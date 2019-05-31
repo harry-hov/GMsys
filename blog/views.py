@@ -15,3 +15,6 @@ def status(request):
 
 def grievances(request):
 	return render(request,'grievances.html')
+
+def medium(request):
+	return render(request, 'gitCard/medium.html')

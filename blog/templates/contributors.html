@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+	<h1> Contributors </h1>
+	<br>
+	<style>
+		body{
+		padding-left:5em ;
+		}
+	</style>
+	<div class="github-card" data-github="harry-hov" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="abhitidarbar" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="karina-0705" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="udaymewada" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="sahilbabani" data-width="240" data-height="300" data-theme="medium"></div>
+	<script src="{% static 'jsGit/widget.js' %}"></script>
+
+{% endblock content %}
