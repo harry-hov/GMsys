@@ -17,7 +17,8 @@ def status(request):
 	return render(request,'status.html')
 
 def grievances(request):
-	return render(request,'grievances.html')
+	obj = Grievance.objects.all()
+	return render(request,'grievances.html', {'obj':obj})
 
 def medium(request):
 	return render(request, 'gitCard/medium.html')

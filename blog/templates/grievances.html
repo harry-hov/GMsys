@@ -2,6 +2,15 @@
 {% load static %}
 {% block content %}
 
-
+    <h1> All Grievances </h1>
+    <hr><br>
+    {% for tmp in obj %}
+        Name: {{ tmp.name }} <br>
+        Enrollment no.: {{ tmp.enroll }} <br>
+        Category: {{ tmp.depart }} <br>
+        Description: {{ tmp.msg }} <br>
+        Status: {{ tmp.status }} <br>
+        <br><hr><br>
+    {% endfor %}
 
 {% endblock content %}
