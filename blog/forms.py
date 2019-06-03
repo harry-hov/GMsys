@@ -4,12 +4,12 @@ from .models import *
 class GrievanceForm(forms.ModelForm):
 
     DEPART=(
-        (1,'Academics'),
-        (0,'Accomodation')
+        ('Academics','Academics'),
+        ('Hostel','Accomodation'),
     )
     STATUS=(
-        (1,'Solved'),
-        (0,'Not Solved')
+        ('Solved','Solved'),
+        ('Not Solved','Not Solved')
     )
 
     name = forms.CharField(widget=forms.TextInput(
@@ -20,13 +20,13 @@ class GrievanceForm(forms.ModelForm):
         attrs={'class':'form-control','placeholder':'Enter Enrollment no.'}
     ), required=True, max_length=20)
     
-    depart = forms.ChoiceField(widget=forms.RadioSelect(), required=True, choices=DEPART)
+    #depart = forms.CharField(required=True, choices=DEPART)
     
     msg = forms.CharField(widget=forms.TextInput(
         attrs={'class':'form-control','placeholder':'Description'}
     ), required=True, max_length=200)
     
-    status = forms.ChoiceField(widget=forms.RadioSelect(), choices=STATUS)
+    #status = forms.CharField(choices=STATUS)
 
     class Meta():
         model = Grievance
