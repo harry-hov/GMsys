@@ -1,0 +1,96 @@
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+    transition: background-color .5s;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: whitesmoke;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: green !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(9, 73, 41);
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+}
+
+.btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+}
+
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-left: 2px solid green;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: Black;
+    display: block;
+    transition: all .2s ease-in-out;
+}
+
+.sidenav a:hover {
+    color: green;
+    transform: scale(1.1);
+}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
