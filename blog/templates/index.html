@@ -3,7 +3,7 @@
 <html lang="en" class="body-full-height">
     <head>
         {% if title %}
-            <title> {{ post.title}}</title>
+            <title> {{ post.title }}</title>
         {% else %}
             <title>GM-sys</title>
         {% endif %}
@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="SHORTCUT ICON" href="{% static 'images/gmicon.png' %}" type="image/png" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" id="theme" href="{% static 'css\theme-default.css' %}" /> 
+        <link rel="stylesheet" type="text/css" id="theme" href="{% static 'css\style.css' %}" /> 
     </head>
     <body>
 
@@ -44,10 +44,13 @@
                                 <li><a href="{% url 'blog-about' %}">About</a></li>
                         </ul>
                     </div>
+                    
                 </div>
             </nav>
         </header>
         
+        <br><br><br>
+
         {% block content %}
         
         {% endblock %}
