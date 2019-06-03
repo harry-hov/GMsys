@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+
+    <style>
+        body{
+            padding-left: 5em;
+        }
+    </style>
+
+    <h1>Submit Grievance</h1><br>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.as_p }}
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock content %}

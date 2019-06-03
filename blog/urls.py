@@ -10,4 +10,5 @@ urlpatterns = [
     path('status/', views.status, name="check-status"),
     path('grievances/', views.grievances, name="all-grievances"),
     path('contributors/cards/medium.html', views.medium),
+    path('submit/', views.submitGrievance, name='submit-grievance'),
 ]
