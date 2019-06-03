@@ -7,3 +7,4 @@ class Grievance(models.Model):
     enroll = models.CharField(max_length=20)
     depart = models.BooleanField()
     msg = models.CharField(max_length=200)
+    status = models.BooleanField(default=False)
