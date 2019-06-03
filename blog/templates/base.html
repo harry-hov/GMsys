@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="body-full-height">
+    <head>
+        {% if title %}
+            <title> {{ post.title }}</title>
+        {% else %}
+            <title>GM-sys</title>
+        {% endif %}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="SHORTCUT ICON" href="{% static 'images/gmicon.png' %}" type="image/png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" id="theme" href="{% static 'css\style.css' %}" /> 
+
+        <style>
+            body{
+                padding-left: 5em;
+            }
+        </style>
+        
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarToggle">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a class="navbar-brand" href="{% url 'blog-home' %}">
+                            <span>
+                                <img class="" src="{% static 'images/gmicon.png' %}" type="image/png" height="32" width="32">
+                                Grievance Portal
+                            </span>
+                        </a>
+
+                    </div>
+        
+                    <div class="collapse navbar-collapse" id="navbarToggle">
+                        <ul class="nav navbar-nav navbar-right">
+                                <li><a href="{% url 'submit-grievance' %}">Submit</a></li>
+                                <li><a href="{% url 'all-grievances' %}">All Grievance</a></li>
+                                <li><a href="{% url 'check-status' %}">Check Status</a></li>
+                                <li><a href="{% url 'contributors' %}">Contributors</a></li>
+                                <li><a href="{% url 'blog-about' %}">About</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>
+        
+        <br><br><br>
+
+        {% block content %}
+        
+        {% endblock %}
+
+    </body>
+</html>
+    
