@@ -3,6 +3,7 @@ from .models import *
 
 class GrievanceForm(forms.ModelForm):
 
+    '''
     DEPART=(
         ('Academics','Academics'),
         ('Hostel','Accomodation'),
@@ -11,7 +12,8 @@ class GrievanceForm(forms.ModelForm):
         ('Solved','Solved'),
         ('Not Solved','Not Solved')
     )
-
+    '''
+    
     name = forms.CharField(widget=forms.TextInput(
         attrs={'class':'form-control','placeholder':'Enter Name'}
     ), required=True, max_length=20)
