@@ -1,5 +1,13 @@
-# GMsys
+<h1 align="center"> GMsys </h1>
+<p align="center">
+  <a href="https://github.com/harry-hov/GMsys/blob/master/blog/static/images/gmicon.png">
+    <img src="https://github.com/harry-hov/GMsys/blob/master/blog/static/images/gmicon.png" align="center" height="150" width="150">
+  </a>
+  <h4 align="center">An Django based Grievance Portal</h4>
+</p>
+
 [![Build Status](https://travis-ci.com/harry-hov/GMsys.svg?branch=master)](https://travis-ci.com/harry-hov/GMsys)
+[![django1.10](https://img.shields.io/badge/django-2.0-brightgreen.svg)](https://www.djangoproject.com)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/harry-hov)
 
 Online Grievance Management System at Institute level
@@ -35,7 +43,7 @@ Online Grievance Management System at Institute level
   <p> You can clone the repo in your local system using following command : </p> 
   
     `git clone https://github.com/user-name/GMsys.git`
-     
+    
   Note: Replace "user-name" with your Github username.
      
 <li> Setting Upstream
