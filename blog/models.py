@@ -35,5 +35,14 @@ class Grievance(models.Model):
     def __str__(self):
         #return self.enroll
         return self.grievance_id
+'''
+    def __iter__(self):
+        return [self.grievance_id, 
+                self.name, 
+                self.enroll, 
+                self.depart, 
+                self.msg, 
+                self.status,]
+'''
 
     

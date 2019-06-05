@@ -11,4 +11,5 @@ urlpatterns = [
     path('grievances/', views.grievances, name="all-grievances"),
     path('contributors/cards/medium.html', views.medium),
     path('submit/', views.submitGrievance, name='submit-grievance'),
+    path('search/', views.search, name='Search'),
 ]

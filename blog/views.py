@@ -32,3 +32,20 @@ def submitGrievance(request):
     else:
         form = GrievanceForm()
     return render(request, 'submit.html', {'form':form})
+
+def search(request):
+    if request.method=='GET':    
+        query = request.GET.get('q')
+        try:
+            query = str(query)
+        except TypeError:
+            query = None
+            results = None
+        if query:
+            results = Grievance.objects.filter(grievance_id = query)
+        return render(request, 'status.html', {"results": results,})
+
+def result(request):
+    return render(request, 'results.html')
+
+

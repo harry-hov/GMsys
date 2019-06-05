@@ -3,5 +3,23 @@
 {% block content %}
 
 
+    <form method="get" action="/search/">
+        Enter Grievance ID: <input type="text" name="q" id="id_q" value="{{ query }}"/>
+        <input type="submit" value="Search" />
+    </form>
+
+    <br><br><br>
+
+    {% if results %}
+        {% for result in results %}
+            Grievance ID: {{ result.grievance_id }} <br>
+            Category: {{ result.depart }} <br>
+            Description: {{ result.msg }} <br>
+            Status: <b> {{ result.status }} </b> <br>
+        {% endfor %}
+    {% else %}
+        <h3>Grievance ID not found</h3>
+    {% endif %}
+    
 
 {% endblock content %}
