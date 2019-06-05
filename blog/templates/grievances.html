@@ -5,8 +5,7 @@
     <h1> All Grievances </h1>
     <hr><br>
     {% for tmp in obj %}
-        Name: {{ tmp.name }} <br>
-        Enrollment no.: {{ tmp.enroll }} <br>
+        Grievance ID: {{ tmp.grievance_id }} <br>
         Category: {{ tmp.depart }} <br>
         Description: {{ tmp.msg }} <br>
         Status: {{ tmp.status }} <br>
